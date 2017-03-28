@@ -64,6 +64,7 @@ public class UserDaoTest {
 		user.setLastName("pogi");
 		
 		userDao.create(user);
+		System.out.println("added!");
 	}
 
 }

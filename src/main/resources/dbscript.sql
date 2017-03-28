@@ -1,8 +1,9 @@
-CREATE DATABASE TEST;
-
-CREATE TABLE `USERS` (
-	`id` int(10) NOT NULL AUTO_INCREMENT,
-	`firstName` varchar(100) NOT NULL,
-	`lastName` varchar(100) NOT NULL,
-    PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+CREATE TABLE dbsimplecrud.users (
+	`id` BIGINT NOT NULL AUTO_INCREMENT,
+	firstName varchar(100) NULL,
+	lastName varchar(100) NULL,
+	CONSTRAINT users_PK PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=latin1
+COLLATE=latin1_swedish_ci ;
